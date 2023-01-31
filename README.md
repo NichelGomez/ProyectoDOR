@@ -19,3 +19,7 @@ En la versión de tablet se verá igual, pero en el móvil no, en este caso lo v
 - Información; Mostramos una serie de características sobre nuestra aplicación.
 - Inicio de sesión y registro; Obligatorio para hacer uso de nuestra aplicación.
 - Footer; Una sección donde encontrarás información de nuestra empresa y algunos links de interés, además podrás cambiar algunas opciones de paginación como el color de la letra o su tamaño.
+
+#### Video
+
+https://drive.google.com/file/d/1MOBVmJVoKj3Vf9voWrmcOIW39U2g8H5h/view?usp=sharing
