@@ -14,4 +14,4 @@ Nuestra aplicación se trata de un reproductor de música online, su propósito 
 - Footer; Una sección donde encontrarás información de nuestra empresa y algunos links de interés, además podrás cambiar algunas opciones de paginación como el color de la letra o su tamaño.
 
 ## Guía de estilos
-(https://github.com/NichelGomez/ProyectoDOR/blob/main/Guia_de_estilos_comprimida.pdf)
+![Guia de estilos](https://github.com/NichelGomez/ProyectoDOR/blob/main/Guia_de_estilos_comprimida.pdf)
