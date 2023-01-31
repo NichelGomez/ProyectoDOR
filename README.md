@@ -1,6 +1,8 @@
 # ProyectoDOR
 Repositorio para el proyecto de DOR
 
+![logoGeneral](https://github.com/NichelGomez/ProyectoDOR/blob/main/LogoBranding_Mesa%20de%20trabajo%201.png)
+
 ## Descripción
 
 Nuestra aplicación se trata de un reproductor de música online, su propósito es, utilizando la ubicación por satélite, encontrar personas cercanas con gustos musicales similares. Además, podremos escribirnos entre los usuarios que hagan ‘match’.
