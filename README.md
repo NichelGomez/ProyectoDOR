@@ -1,7 +1,7 @@
 # ProyectoDOR
 Repositorio para el proyecto de DOR
 
-![logoGeneral](https://github.com/NichelGomez/ProyectoDOR/blob/main/LogoBranding_Mesa%20de%20trabajo%201.png)
+![logoGeneral](https://github.com/NichelGomez/ProyectoDOR/blob/main/Logo.png)
 
 ## Descripción
 
