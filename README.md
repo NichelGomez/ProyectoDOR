@@ -4,7 +4,8 @@ Repositorio para el proyecto de DOR
 ## Descripción
 
 Nuestra aplicación se trata de un reproductor de música online, su propósito es compartir y encontrar personas con  gustos musicales similares además podremos escribirnos entre los usuarios que hagan ‘match’.
-Nuestra web consta de cuatro secciones;
+
+### Nuestra web consta de cuatro secciones;
 
 - Portada e Información; Una breve descripción de nuestra aplicación.
 - Precios; Ofrece tres planes de suscripción, con sus características y limitaciones.
