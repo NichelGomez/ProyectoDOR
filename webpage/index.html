@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-transparent">
+        <div class="container-fluid">
+            <img id="logo" src="./imagery/logo.png" alt="logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav text-end mx-5">
+                    <li class="nav-item enlaces">
+                        <a class="nav-link" href="#">Conócenos</a>
+                    </li>
+                    <li class="nav-item enlaces">
+                        <a class="nav-link" href="#">Nuestros planes</a>
+                    </li>
+                    <li class="nav-item enlaces">
+                        <a class="nav-link" href="#">Inicia sesión</a>
+                    </li>
+                    <li class="nav-item enlaces">
+                        <a class="nav-link" href="#">Registrate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">   
+        <div class="planes-grid">
+            <div id="plan1">
+                <div class="planes">
+                    <img class="planes-img" src="./imagery/plan1.jpg" alt="Avatar" style="width:100%">
+                    <div class="planes-body">
+                      <h4><b>PLAN DUO</b></h4> 
+                      <p>0€ / mes</p> 
+                      <p>Gratuito para ti</p> 
+                      <p>Anuncios cada hora</p> 
+                      <p class="oculto">.</p> 
+                      <p class="oculto">.</p> 
+                      <div>
+                        <button class="subscribirse"><b>Subscribirme</b></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="plan2">
+                <div class="planes">
+                    <img class="planes-img" src="./imagery/plan2.jpg" alt="Avatar" style="width:100%">
+                    <div class="planes-body" id="pcentral">
+                      <h4><b>PLAN BANDA</b></h4> 
+                      <p>7.99€ / mes</p> 
+                      <p>Likes ilimitados mensuales</p> 
+                      <p>Música sin anuncios</p> 
+                      <p>Música sin offline</p> 
+                      <p class="oculto">.</p> 
+                      <div>
+                        <button class="subscribirse" id="bcentral"><b>Subscribirme</b></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="plan3">
+                <div class="planes">
+                    <img class="planes-img" src="./imagery/plan3.jpg" alt="Avatar" style="width:100%">
+                    <div class="planes-body">
+                      <h4><b>PLAN ORQUESTA</b></h4> 
+                      <p>9.99€ / mes</p> 
+                      <p>MegaLikes!</p> 
+                      <p>Música sin anuncios</p>  
+                      <p>Música offline</p>  
+                      <p>Calidad 320khz</p>  
+                      <div>
+                        <button class="subscribirse"><b>Subscribirme</b></button>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <div class="container">   
+        <div class="card-horizontal">
+          <div class="contenido-horizontal">
+            <div>
+              <img class="portrait-img" src="./imagery/curiosity1.jpg" alt="imagenHorizontal">
+            </div>
+            <div class="texto-horizontal">
+              <h2>Card horizontal</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+              Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+              In nec elementum felis, quis luctus lorem.</p>
+              <div>
+                <button class="saberMas"><b>Saber más</b></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="contenido-grid">
+          <div id="area1">
+              <div class="card-vertical" id="modificada">
+                <div>
+                  <img class="portrait-img" src="./imagery/curiosity2.jpg" alt="imagenHorizontal" id="imgvertical">
+                </div>
+                <div class="texto-vertical" id="texto-modificado">
+                  <h2>Card vertical</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+                  Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+                  In nec elementum felis, quis luctus lorem.</p>
+                  <div>
+                    <button class="saberMas" id="btn-vertical-modificado"><b>Saber más</b></button>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div id="area2">
+            <div class="card-vertical">
+              <div>
+                <img class="portrait-img" src="./imagery/curiosity3.jpg" alt="imgvertical-larga" id="imgvertical-larga">
+              </div>
+              <div class="texto-vertical">
+                <h2>Card vertical</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+                Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+                In nec elementum felis, quis luctus lorem.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div>
+                  <button class="saberMas" id="btn-vertical"><b>Saber más</b></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="card-horizontal" id="inferior">
+          <div class="contenido-horizontal">
+            <div>
+              <img class="portrait-img" src="./imagery/curiosity4.jpg" alt="imagenHorizontal">
+            </div>
+            <div class="texto-horizontal">
+              <h2>Card horizontal</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+              Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+              In nec elementum felis, quis luctus lorem.</p>
+              <div>
+                <button class="saberMas"><b>Saber más</b></button>
+              </div>
+            </div>
+          </div>
+        </div> 
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
