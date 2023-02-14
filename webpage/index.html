@@ -1,97 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-transparent">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/bauhaus-93" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="icon" href="fotos/Corazon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
+    <title>Loveach</title>
+  </head>
+  <body class="d-flex vw-100 vh-100 align-items-start justify-content-center">
+    <div class="container-fluid position-fixed menu">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <img id="logo" src="./imagery/logo.png" alt="logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarSupportedContent">
-                <ul class="navbar-nav text-end mx-5">
-                    <li class="nav-item enlaces">
-                        <a class="nav-link" href="#">Conócenos</a>
-                    </li>
-                    <li class="nav-item enlaces">
-                        <a class="nav-link" href="#">Nuestros planes</a>
-                    </li>
-                    <li class="nav-item enlaces">
-                        <a class="nav-link" href="#">Inicia sesión</a>
-                    </li>
-                    <li class="nav-item enlaces">
-                        <a class="nav-link" href="#">Registrate</a>
-                    </li>
-                </ul>
-            </div>
+          <a href="#inicio">
+            <img src="fotos/Corazon.png" alt="iconoCorazon" id="logoCorazon">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon">&#9776;</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#informacion">Información</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#precio">Suscripción</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sesion">Inicio sesión</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sesion">Registro</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <div class="container">   
-        <div class="planes-grid">
-            <div id="plan1">
-                <div class="planes">
-                    <img class="planes-img" src="./imagery/plan1.jpg" alt="Avatar" style="width:100%">
-                    <div class="planes-body">
-                      <h4><b>PLAN DUO</b></h4> 
-                      <p>0€ / mes</p> 
-                      <p>Gratuito para ti</p> 
-                      <p>Anuncios cada hora</p> 
-                      <p class="oculto">.</p> 
-                      <p class="oculto">.</p> 
-                      <div>
-                        <button class="subscribirse"><b>Subscribirme</b></button>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div id="plan2">
-                <div class="planes">
-                    <img class="planes-img" src="./imagery/plan2.jpg" alt="Avatar" style="width:100%">
-                    <div class="planes-body" id="pcentral">
-                      <h4><b>PLAN BANDA</b></h4> 
-                      <p>7.99€ / mes</p> 
-                      <p>Likes ilimitados mensuales</p> 
-                      <p>Música sin anuncios</p> 
-                      <p>Música sin offline</p> 
-                      <p class="oculto">.</p> 
-                      <div>
-                        <button class="subscribirse" id="bcentral"><b>Subscribirme</b></button>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div id="plan3">
-                <div class="planes">
-                    <img class="planes-img" src="./imagery/plan3.jpg" alt="Avatar" style="width:100%">
-                    <div class="planes-body">
-                      <h4><b>PLAN ORQUESTA</b></h4> 
-                      <p>9.99€ / mes</p> 
-                      <p>MegaLikes!</p> 
-                      <p>Música sin anuncios</p>  
-                      <p>Música offline</p>  
-                      <p>Calidad 320khz</p>  
-                      <div>
-                        <button class="subscribirse"><b>Subscribirme</b></button>
-                      </div>
-                    </div>
-                </div>
-            </div>
+      </nav>
+    </div>
+   
+      <video class="fullscreen" src="fotos/Video.mp4" playsinline autoplay muted loop id="fullscreen">
+      </video>
+      <div class="opaco"></div>
+      <div class="difuminado"></div>
+      <div class="container intro d-flex mb-5 " id="inicio">
+        <div class="row d-flex align-items-center">
+          <div class="col-6 col-s">
+            <p class="h1 col-12">Conoce a través de la música</p>
+            <p class="h3 col-12">Canciones y personas sin límites</p>
+          </div>
+          <div class="col-6">      
+            <img src="fotos/Logo.png" alt="LogoLoveach" class="col-12 logo">
+          </div>
         </div>
-    </div>  
-    <div class="container">   
+      </div>
+      <div class="container movil d-flex mb-5"></div>
+      <div class="container informacion w-100" id="informacion">
         <div class="card-horizontal">
-          <div class="contenido-horizontal">
-            <div>
-              <img class="portrait-img" src="./imagery/curiosity1.jpg" alt="imagenHorizontal">
+          <div class="contenido-horizontal"  id="card-horizontal1">
+            <div id="contenido-horizontal1">
+              <img class="portrait-img" src="./fotos/curiosity1.jpg" alt="imagenHorizontal">
             </div>
-            <div class="texto-horizontal">
+            <div class="texto-horizontal"  id="texto-horizontal1">
               <h2>Card horizontal</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
               Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
@@ -103,58 +82,199 @@
           </div>
         </div>
         <br>
-        <div class="contenido-grid">
-          <div id="area1">
-              <div class="card-vertical" id="modificada">
-                <div>
-                  <img class="portrait-img" src="./imagery/curiosity2.jpg" alt="imagenHorizontal" id="imgvertical">
-                </div>
-                <div class="texto-vertical" id="texto-modificado">
-                  <h2>Card vertical</h2>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
-                  Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
-                  In nec elementum felis, quis luctus lorem.</p>
-                  <div>
-                    <button class="saberMas" id="btn-vertical-modificado"><b>Saber más</b></button>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div id="area2">
-            <div class="card-vertical">
-              <div>
-                <img class="portrait-img" src="./imagery/curiosity3.jpg" alt="imgvertical-larga" id="imgvertical-larga">
-              </div>
-              <div class="texto-vertical">
-                <h2>Card vertical</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
-                Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
-                In nec elementum felis, quis luctus lorem.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <div>
-                  <button class="saberMas" id="btn-vertical"><b>Saber más</b></button>
-                </div>
-              </div>
+        <br>
+        <div class="card-horizontal">
+          <div class="contenido-horizontal modificado"  id="card-horizontal2">
+            <div id="contenido-horizontal2">
+              <img class="portrait-img" src="./fotos/curiosity2.jpg" alt="imagenHorizontal">
             </div>
-          </div>
-        </div> 
-        <div class="card-horizontal" id="inferior">
-          <div class="contenido-horizontal">
-            <div>
-              <img class="portrait-img" src="./imagery/curiosity4.jpg" alt="imagenHorizontal">
-            </div>
-            <div class="texto-horizontal">
+            <div class="texto-horizontal textomodificado"  id="texto-horizontal2">
               <h2>Card horizontal</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
               Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
               In nec elementum felis, quis luctus lorem.</p>
               <div>
-                <button class="saberMas"><b>Saber más</b></button>
+                <button class="saberMas botonmodificado"><b>Saber más</b></button>
               </div>
             </div>
+
           </div>
-        </div> 
+        </div>
+        <br>
+        <br>
+        <div class="card-horizontal">
+          <div class="contenido-horizontal" id="card-horizontal3">
+            <div id="contenido-horizontal3"> 
+              <img class="portrait-img" src="./fotos/curiosity3.jpg" alt="imagenHorizontal">            
+              </div>
+              <div class="texto-horizontal" id="texto-horizontal3">
+                <h2>Card horizontal</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+                Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+                In nec elementum felis, quis luctus lorem.</p>
+              <div>
+                <button class="saberMas"><b>Saber más</b></button>
+            </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="card-horizontal">
+          <div class="contenido-horizontal modificado"  id="card-horizontal4">
+            <div id="contenido-horizontal4">
+              <img class="portrait-img" src="./fotos/curiosity4.jpg" alt="imagenHorizontal">
+            </div>
+            <div class="texto-horizontal textomodificado"  id="texto-horizontal4">
+              <h2>Card horizontal</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at vestibulum elit. Donec gravida urna nec erat sodales rutrum. 
+              Ut vitae sapien rutrum, posuere neque at, facilisis tellus. Mauris elit diam, fringilla eget ligula sed, faucibus interdum mi. 
+              In nec elementum felis, quis luctus lorem.</p>
+              <div>
+                <button class="saberMas botonmodificado"><b>Saber más</b></button>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-</body>
+      <div class="container w-100 precio" id="precio">
+              <div class="planes-grid">
+        <div id="plan1">
+            <div class="planes">
+                <img class="planes-img" src="./fotos/plan1.jpg" alt="Avatar" style="width:100%">
+                <div class="planes-body">
+                  <h4><b>PLAN SOLISTA</b></h4> 
+                  <p>0€ / mes</p> 
+                  <p>Gratuito para ti</p> 
+                  <p>Anuncios cada hora</p> 
+                  <p class="oculto">.</p> 
+                  <p class="oculto">.</p> 
+                  <div>
+                    <button class="subscribirse"><b>Subscribirme</b></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="plan2">
+            <div class="planes">
+                <img class="planes-img" src="./fotos/plan3.jpg" alt="Avatar" style="width:100%">
+                <div class="planes-body" id="pcentral">
+                  <h4><b>PLAN BANDA</b></h4> 
+                  <p>7.99€ / mes</p> 
+                  <p>Likes ilimitados mensuales</p> 
+                  <p>Música sin anuncios</p> 
+                  <p>Música sin offline</p> 
+                  <p class="oculto">.</p> 
+                  <div>
+                    <button class="subscribirse" id="bcentral"><b>Subscribirme</b></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div id="plan3">
+            <div class="planes">
+                <img class="planes-img" src="./fotos/plan2.jpg" alt="Avatar" style="width:100%">
+                <div class="planes-body">
+                  <h4><b>PLAN ORQUESTA</b></h4> 
+                  <p>9.99€ / mes</p> 
+                  <p>MegaLikes!</p> 
+                  <p>Música sin anuncios</p>  
+                  <p>Música offline</p>  
+                  <p>Calidad 320khz</p>  
+                  <div>
+                    <button class="subscribirse"><b>Subscribirme</b></button>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+
+      <div class="container d-flex mt-5 " id="sesion">
+        <div  id="rectanguloTopSesion">
+          <img src="Fotos/person-circle.svg" alt="persona" class="persona">
+        </div>
+        <div class="justify-content-center" id="rectanguloBottomSesion">
+          <div class="row justify-content-center text-center mt-5">
+            <form class="col-6">
+              <div class="mb-3">
+                <div class="row justify-content-center"></div>
+                <label for="exampleInputEmail1" class="form-label"><p class="h3">Email</p class="h3"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"><p class="h3">Contraseña</p class="h3"></label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
+              </div>
+              <button type="button" class="btn">Iniciar sesión</button>
+            </form>
+          </div>
+        </div>
+        <img src="fotos/disco.jpg" alt="discoMúsica" id="sesionFoto">
+        <div id="sesionFiltro"></div>
+      </div>
+      <div class="container d-flex mt-5 " id="registro">
+        <div id="rectanguloTopRegistro">
+          <img src="Fotos/person-circle.svg" alt="persona" class="persona">
+        </div>
+        <div class="justify-content-center" id="rectanguloBottomRegistro">
+          <div class="row justify-content-center text-center mt-1">
+            <form class="col-12">
+              <div class="mb-3 d-flex justify-content-evenly">
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Nombre</p class="h3"></label>
+                  <input type="text" class="form-control" placeholder="Julián">
+                </div>
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Apellidos</p class="h3"></label>
+                  <input type="text" class="form-control" placeholder="García Bolívar">
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-evenly">
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Email</p class="h3"></label>
+                  <input type="email" class="form-control" placeholder="example@mail.com">
+                </div>
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Contraseña</p class="h3"></label>
+                  <input type="password" class="form-control" placeholder="*******">
+                </div>
+              </div>
+              <div class="mb-3 d-flex justify-content-evenly">
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Cumpleaños</p class="h3"></label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="col-5">
+                  <label for="exampleInputEmail1" class="form-label"><p class="h3">Género</p class="h3"></label>
+                  <div class="mb-3">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Abrir</option>
+                      <option>Masculino</option>
+                      <option>Femenino</option>
+                      <option>No determinado</option>
+                      <option>Prefiero no contestar</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn">Registrarse</button>
+            </form>
+          </div>
+        </div>
+        <img src="fotos/jack.jpeg" alt="entradaMúsica" id="registroFoto">
+        <div id="registroFiltro"></div>
+      </div>
+      <div class="d-flex flex-row cambioRegistro">
+        <p class="h3">Iniciar sesión</p class="h3">
+        <div class="form-check form-switch" style=" top: 7px; position: relative; left: 5px;">
+          <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+        </div>
+        <p class="h3">Registro</p class="h3">
+      </div>
+      
+    <script src="./js/index.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
