@@ -1,0 +1,28 @@
+body{
+    background-image: url('video2.PNG');
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+.contenido-grid{
+    display: grid;
+    grid-template-areas: "area1 area2 area3";
+}
+
+#area2{
+    padding-left: 13%;
+}
+
+#area3{
+    padding-left: 13%;
+}
+
+#imagenCentral{
+    margin-top: 100%;
+}
