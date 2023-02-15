@@ -661,3 +661,9 @@ p{
   font-family: century-gothic;
   font-size: 18px;
 }
+
+.active{
+  border-radius: 35px;
+  background-color: #A34091;
+
+}
