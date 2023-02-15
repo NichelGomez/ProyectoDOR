@@ -3,11 +3,11 @@ body{
   overflow-x: hidden ;
   position: relative;
 }
-#errorCorreo,#correovalido,#passwordmal, #nombrer_error,
+#errorCorreo,#passwordmal, #nombrer_error,
 #apellidosr_error,#emailr_error,#passwordr_error,#cumpleañosr_error{
   color: red;
 }
-#registrarse_exito{
+#registrarse_exito,#correovalido{
   color: #A34091;
 }
 
