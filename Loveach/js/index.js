@@ -1,5 +1,16 @@
 let boton = document.getElementById("flexSwitchCheckDefault");
 
+document.getElementById('iniciarsesion').addEventListener("click", function (e){
+
+    let correo = document.getElementById('exampleInputEmail1').value;
+    let password = document.getElementById('exampleInputPassword1').value;
+
+    if(validarEmail(correo)){
+        alert("Correo válido");
+    }else{
+        alert("correo no valido");
+    }
+});
 
 boton.addEventListener('click' , ()=>{
 
@@ -86,4 +97,10 @@ botones.forEach(boton => {
         location = "noticias.html?id=" + boton.id;
     });
 });
+
+function validarEmail(email) {
+    // Expresión regular para validar el formato del correo electrónico
+    const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+    return regex.test(email);
+  }
 
