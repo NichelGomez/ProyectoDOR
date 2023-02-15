@@ -78,16 +78,16 @@ video.fullscreen {
 }
 
 .informacion{
-  top: 2200px;
+  top: 4000px;
 }
 
 .noticias{
   z-index: 1;
-  top: 4300px;
+  top: 2200px;
 }
 
 .precio{
-  top: 3200px;
+  top: 5000px;
 }
 
 .sesion{
@@ -490,7 +490,7 @@ input{
   top: 9100px;
 }
 .cambioRegistro{
-  top: 9900px;
+  top: 9800px;
 }
 .card-horizontal{
   width: 350px;
@@ -506,10 +506,13 @@ input{
   width: 350px;
 }
 .precio{
-  top: 3300px;
+  top: 6500px;
 }
 .noticias{
-  top: 5800px;
+  top: 2000px;
+}
+.informacion{
+  top: 5500px;
 }
 .fotoModificada{
   border-radius: 15px 15px 0px 0px;
@@ -589,7 +592,7 @@ footer{
   top: 1600px;
 }
 .informacion{
-  top: 3500px;
+  top: 6800px;
 }
   .sesion{
     top: 10400px;
@@ -621,10 +624,10 @@ footer{
     width: 350px;
   }
   .precio{
-    top: 4700px;
+    top: 8000px;
   }
   .noticias{
-    top: 7300px;
+    top: 3200px;
   }
   footer{
     top: 11500px;
@@ -852,6 +855,7 @@ p{
 
     margin-right: 3px;
     margin-bottom: 5px;
+
 }
 
 /* If you don't want the footer to be responsive, remove these media queries */
@@ -876,3 +880,4 @@ p{
     }
 
 }
+
