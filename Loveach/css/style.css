@@ -3,6 +3,9 @@ body{
   overflow-x: hidden ;
   position: relative;
 }
+#errorCorreo,#correovalido,#passwordmal{
+  color: red;
+}
 
 video.fullscreen {
     position: fixed;

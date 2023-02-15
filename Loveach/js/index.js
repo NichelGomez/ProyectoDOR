@@ -1,14 +1,32 @@
 let boton = document.getElementById("flexSwitchCheckDefault");
 
+document.getElementById('botonregistrarse').addEventListener('click', function (e){
+
+    alert("pene");
+});
+
 document.getElementById('iniciarsesion').addEventListener("click", function (e){
 
     let correo = document.getElementById('exampleInputEmail1').value;
     let password = document.getElementById('exampleInputPassword1').value;
+    let comprobacionpassword = true;
+    if(password.length < 1){
+        document.getElementById('passwordmal').innerHTML = "La contraseña es inválida";
+        comprobacionpassword = false;
+    }
 
     if(validarEmail(correo)){
-        alert("Correo válido");
+        document.getElementById('errorCorreo').innerHTML = "";
+        if(comprobacionpassword){
+            document.getElementById('passwordmal').innerHTML = "";
+
+            document.getElementById('correovalido').innerHTML = "Se ha enviado un correo, comprueba la carpeta spawm";
+
+        }
     }else{
-        alert("correo no valido");
+        document.getElementById('errorCorreo').innerHTML = "Correo inválido";
+        document.getElementById('correovalido').innerHTML = "";
+
     }
 });
 

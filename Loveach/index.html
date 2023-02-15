@@ -230,12 +230,15 @@
                 <div class="row justify-content-center"></div>
                 <label for="exampleInputEmail1" class="form-label"><p class="h3">Email</p class="h3"></label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@mail.com">
+                  <p id="errorCorreo"></p>
               </div>
               <div class="mb-3">
                 <label for="exampleInputPassword1" class="form-label"><p class="h3">Contraseña</p class="h3"></label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="*******">
+                  <p id="passwordmal"></p>
               </div>
-              <button type="button" id="iniciarsesion" class="btn">Iniciar sesión</button>
+              <button type="button" id="iniciarsesion" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Iniciar sesión</button>
+              <p id="correovalido"></p>
             </form>
           </div>
         </div>
@@ -287,7 +290,7 @@
                   </div>
                 </div>
               </div>
-              <button type="button" class="btn">Registrarse</button>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botonregistrarse">Registrarse</button>
             </form>
           </div>
         </div>
@@ -305,4 +308,9 @@
     <script src="js/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
   </body>
+
+
+
+
+
 </html>
