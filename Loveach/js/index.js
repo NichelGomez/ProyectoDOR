@@ -3,8 +3,8 @@ let boton = document.getElementById("flexSwitchCheckDefault");
 
 boton.addEventListener('click' , ()=>{
 
-    let sesion = document.getElementById('sesion');
-    let registro = document.getElementById('registro');
+    let sesion = document.getElementById('scrollspyHeading4');
+    let registro = document.getElementById('scrollspyHeading5');
     if(boton.checked){
         sesion.style.visibility = 'hidden';
         registro.style.visibility = 'visible';

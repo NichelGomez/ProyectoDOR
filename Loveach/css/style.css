@@ -1,5 +1,5 @@
 body{
-  overflow-y: auto ;
+  overflow-y: scroll;
   overflow-x: hidden ;
   position: relative;
 }
@@ -495,6 +495,9 @@ input{
     height: 450px;
     top: 16.5%;
 
+  }
+  .portrait-img{
+    height: 300px;
   }
   #rectanguloBottomRegistro{
     height: 450px;

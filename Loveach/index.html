@@ -18,9 +18,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/oov2wcw.css">
     <title>Loveach</title>
   </head>
-  <body class="d-flex vw-100 vh-100 align-items-start justify-content-center">
+  <body class="d-flex vw-100 vh-100 align-items-start justify-content-center" data-bs-spy="scroll" data-bs-target="#navId" tabindex="0">
     <div class="container-fluid position-fixed menu">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="navId">
         <div class="container-fluid">
           <a href="#inicio">
             <img src="fotos/Corazon.png" alt="iconoCorazon" id="logoCorazon">
@@ -242,7 +242,7 @@
         <img src="fotos/disco.jpg" alt="discoMúsica" id="sesionFoto">
         <div id="sesionFiltro"></div>
       </div>
-      <div class="container d-flex mt-5 registro">
+      <div class="container d-flex mt-5 registro" id="scrollspyHeading5">
         <div id="rectanguloTopRegistro">
           <img src="Fotos/person-circle.svg" alt="persona" class="persona">
         </div>
@@ -302,7 +302,7 @@
         <p class="h3">Registro</p class="h3">
       </div>
       
-    <script src="./js/index.js" defer></script>
+    <script src="js/index.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
