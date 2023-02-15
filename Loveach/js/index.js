@@ -2,7 +2,13 @@ let boton = document.getElementById("flexSwitchCheckDefault");
 
 document.getElementById('botonregistrarse').addEventListener('click', function (e){
 
-    alert("pene");
+    let nombre = document.getElementById('nombre_registro').value;
+    let apellidos = document.getElementById('apellidos_registro').value;
+    let email = document.getElementById('email_registro').value;
+    let password = document.getElementById('password_registro').value;
+
+    
+
 });
 
 document.getElementById('iniciarsesion').addEventListener("click", function (e){
