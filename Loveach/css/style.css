@@ -1,6 +1,7 @@
 body{
   overflow-y: auto ;
   overflow-x: hidden ;
+  position: relative;
 }
 
 video.fullscreen {
@@ -86,11 +87,11 @@ video.fullscreen {
   top: 3200px;
 }
 
-#sesion{
+.sesion{
   top: 6000px;
 }
 
-#registro{
+.registro{
   top: 6000px;
   visibility: hidden;
 }
@@ -387,7 +388,7 @@ input{
 .portrait-img {
   border-radius: 15px 0px 0px 15px;
   width: 400px;
-  height: 300px;
+  height: 325px;
 }
 
 #imgvertical{
@@ -563,11 +564,11 @@ input{
   "plan2"
   "plan3";
 }
-#sesion{
+.sesion{
   top: 8900px;
 }
 
-#registro{
+.registro{
   top: 8900px;
 }
 .cambioRegistro{
@@ -604,7 +605,7 @@ input{
 .informacion{
   top: 3500px;
 }
-  #sesion{
+  .sesion{
     top: 10400px;
   }
   #rectanguloBottomSesion{
@@ -613,7 +614,8 @@ input{
   #rectanguloBottomRegistro{
     top: 25%;
   }
-  #registro{
+  
+  .registro{
     top: 10400px;
   }
   .cambioRegistro{
@@ -643,4 +645,13 @@ input{
 .icono{
   filter: invert(87%) sepia(17%) saturate(292%) hue-rotate(283deg) brightness(99%) contrast(96%);
   width: 90px;
+}
+
+h2{
+  font-family: 'Bauhaus 93'!important;
+}
+
+p{
+  font-family: century-gothic;
+  font-size: 18px;
 }
