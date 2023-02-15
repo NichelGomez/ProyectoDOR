@@ -277,14 +277,14 @@
               <div class=" d-flex justify-content-evenly">
                 <div class="col-5">
                   <label for="exampleInputEmail1" class="form-label"><p class="h3">Cumpleaños</p class="h3"></label>
-                  <input type="date" class="form-control">
+                  <input type="date" class="form-control" id="cumpleaños">
+                  <p id="cumpleañosr_error"></p>
                 </div>
                 <div class="col-5">
                   <label for="exampleInputEmail1" class="form-label"><p class="h3">Género</p class="h3"></label>
                   <div class="mb-3">
                     <select class="form-select" aria-label="Default select example">
-                      <option selected>Abrir</option>
-                      <option>Masculino</option>
+                      <option selected>Masculino</option>
                       <option>Femenino</option>
                       <option>No determinado</option>
                       <option>Prefiero no contestar</option>
@@ -293,6 +293,9 @@
                 </div>
               </div>
               <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" id="botonregistrarse">Registrarse</button>
+              <br>
+              <br>
+              <p id="registrarse_exito"></p>
             </form>
           </div>
         </div>

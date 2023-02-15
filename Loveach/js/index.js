@@ -6,9 +6,56 @@ document.getElementById('botonregistrarse').addEventListener('click', function (
     let apellidos = document.getElementById('apellidos_registro').value;
     let email = document.getElementById('email_registro').value;
     let password = document.getElementById('password_registro').value;
+    let cumple = document.getElementById('cumpleaños').value;
+    let comprobante = false;
 
-    alert("pene");
 
+    if(esNombreValido(nombre)){
+        comprobante = true;
+        document.getElementById('nombrer_error').innerHTML = "";
+    }else{
+        document.getElementById('nombrer_error').innerHTML = 'Nombre no válido';
+        comprobante = false;
+        
+    }
+
+    if(validarApellidos(apellidos)){
+        comprobante = true;
+        document.getElementById('apellidosr_error').innerHTML = "";
+    }else{
+        document.getElementById('apellidosr_error').innerHTML = 'Apellidos no válidos';
+        comprobante = false;
+        
+    }
+
+    if(validarEmail(email)){
+        comprobante = true;
+        document.getElementById('emailr_error').innerHTML = "";
+    }else{
+        document.getElementById('emailr_error').innerHTML = 'Correo no válido';
+        comprobante = false;
+        
+    }
+
+    if(password.length > 4){
+        comprobante = true;
+        document.getElementById('passwordr_error').innerHTML = "";
+    }else{
+        document.getElementById('passwordr_error').innerHTML = 'La contraseña debe tener al menos 5 caracteres';
+        comprobante = false;
+    }
+    if(cumple.length > 0){
+        comprobante = true;
+        document.getElementById('cumpleañosr_error').innerHTML = '';
+    }else{
+        document.getElementById('cumpleañosr_error').innerHTML = 'Selecciona una fecha de cumpleaños';
+        comprobante = false;
+    }
+
+
+    if(comprobante == true){
+        document.getElementById('registrarse_exito').innerHTML = 'Se ha enviado un correo electrónico a la dirección proporcionada';
+    }
 });
 
 document.getElementById('iniciarsesion').addEventListener("click", function (e){
@@ -26,7 +73,7 @@ document.getElementById('iniciarsesion').addEventListener("click", function (e){
         if(comprobacionpassword){
             document.getElementById('passwordmal').innerHTML = "";
 
-            document.getElementById('correovalido').innerHTML = "Se ha enviado un correo, comprueba la carpeta spawm";
+            document.getElementById('correovalido').innerHTML = "Se ha iniciado sesión correctamente.";
 
         }
     }else{
@@ -43,7 +90,7 @@ boton.addEventListener('click' , ()=>{
     if(boton.checked){
         sesion.style.visibility = 'hidden';
         registro.style.visibility = 'visible';
-    }else{
+    }else{/*  */
         sesion.style.visibility = 'visible';
         registro.style.visibility = 'hidden';
     }
@@ -126,5 +173,22 @@ function validarEmail(email) {
     // Expresión regular para validar el formato del correo electrónico
     const regex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
     return regex.test(email);
+}
+
+function esNombreValido(cadena) {
+    // Expresión regular para verificar que la cadena solo tiene letras y espacios
+    const patron = /^[a-zA-Z\s]+$/
+    // Verifica si la cadena coincide con el patrón
+    return patron.test(cadena)
+}
+
+function validarApellidos(cadena) {
+    // Expresión regular para verificar que la cadena tiene solo letras y espacios, con un segundo espacio opcional
+    const patron = /^[a-zA-Z]+\s[a-zA-Z]+\s?[a-zA-Z]*$/
+    // Verifica si la cadena coincide con el patrón
+    return patron.test(cadena)
   }
+  
+
+
 
