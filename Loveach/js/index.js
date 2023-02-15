@@ -10,8 +10,8 @@ document.getElementById('iniciarsesion').addEventListener("click", function (e){
     let correo = document.getElementById('exampleInputEmail1').value;
     let password = document.getElementById('exampleInputPassword1').value;
     let comprobacionpassword = true;
-    if(password.length < 1){
-        document.getElementById('passwordmal').innerHTML = "La contraseña es inválida";
+    if(password.length < 4){
+        document.getElementById('passwordmal').innerHTML = "La contraseña es inválida mínimo 4 caracteres";
         comprobacionpassword = false;
     }
 
