@@ -7,7 +7,7 @@ document.getElementById('botonregistrarse').addEventListener('click', function (
     let email = document.getElementById('email_registro').value;
     let password = document.getElementById('password_registro').value;
 
-    
+    alert("pene");
 
 });
 
